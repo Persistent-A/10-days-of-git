@@ -37,7 +37,7 @@
 
 ## Git Areas
 
-![alt text](https://file%2B.vscode-resource.vscode-cdn.net/var/folders/pv/hyb3d5nx1t7fwpd2d_62xszc0000gn/T/com.apple.Notes/HardLinkURLTemp/A6A7532C-EF7A-470B-919C-C48AB190E721/1664341955/Working.png?version%3D1664672430308)
+
 
 # Git Tools:
 
