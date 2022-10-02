@@ -60,11 +60,172 @@
 |Copy file|cp fileName.txt file2.txt|- Copy the content of fileName.txt to file2.txt
 |Rename File/Folder|mv file1.txt fileOne.txt|- file1.txt will be renamed to fileOne.txt
 |Move File to a Folder|mv file.txt folder|- Moves file.txt to folder
-|Move multiple files|mv -t backups file1 file2 file3|- Moves file1 file2 file3 to backups folder
+|Move multiple files|mv -t backups file1 file2 file3 : For mac: mv file1 file2 ... folder|- Moves file1 file2 file3 to backups folder
 |Recursive copy|cp -r backups backup-2|- Copies all the non-empty files and subfolders of backups to backup2
 |Delete a file|rm file.txt|- Deletes file.txt
 |Delete empty folder|rmdir folder|- Deletes the folder
 |Delete non-empty folder|rmdir -rf folder|- Deletes recursively the files and subFolders also
+
+## Git Command Lines
+
+1. Install Git: 
+    ```
+        install git
+    ```
+2. Checking status of the repository: 
+    ```
+        git status
+    ```
+3. Configure name and email:
+    ```
+        git config --global user.name 'yourname'
+        git config --global user.email 'youremail'
+    ```
+4. Create a local git repository:
+    ```
+        mkdir project_name
+        cd project_name
+    ```
+5. Initialize Git:
+    ```
+        git init
+    ```
+6. Add file to the staging area : 
+    
+    For single file
+    ```
+        git add filename
+    ```
+    For multiple files
+    ```
+        git add filename1 filename2
+    ```
+    To add all files and folders at once
+    ```
+        git add .
+    ```
+    To add and commit at the same time
+    ```
+        git commit -am 'commit message'
+    ```
+7. Unstage a file
+    ```
+        git reset HEAD filename
+    ```
+8. Commit the changes
+    ```
+        git commit -m 'your message'
+    ```
+9. Git log
+    ```
+        git log
+    ```
+10. List minified log history
+    ```
+        git log --oneline
+    ```
+11. List 5 commit history
+    ```
+        git log --5
+    ```
+12. Git check out
+    ```
+        git checkout commit-id
+    ```
+13. Creating a branch
+
+    Only to create branch
+    ```
+        git branch  branch-name
+    ```
+    To create and checkout to the branch at the same time
+    ```
+        git checkout -b branch-name
+    ```
+    To switch between branches
+    ```
+        git checkout main
+        git checkout branch-name
+    ```
+    To list down all the branches
+    ```
+        git branch
+    ```
+14. Create account on GitHub
+
+    GitHub Sign up on GitHub
+
+15. Create Repository on GitHub
+
+    Go to GitHub and create a repository by click the plus icon on the top right corner.
+
+16. Connecting git with remote repository
+    ```
+        git remote add origin remote_repository_ul
+    ```
+17. Push
+    ```
+        git push -u origin master
+    ```
+18. Merge
+    ```
+        git checkout develop
+        git merge feature
+    ```
+19. Pull
+    ```
+        git checkout yourbranch
+        git pull origin develop 
+    ```
+    ```
+        git checkout develop
+        git merge yourbranch
+        git push -u origin develop
+    ```
+20. Git clone
+    ```
+        cd Desktop
+        git clone https://github.com/Asabeneh/10-days-of-git-and-github.git
+    ```
+21. Rename Branch
+
+    To rename a current branch
+    ```
+        git branch -m <newname>
+    ```
+    To rename any branch
+    ```
+        git branch -m <oldname> <newname>
+    ```
+22. Deleting Branch
+
+    To delete a local branch
+    ```
+        git branch -d branch-name
+        git branch -D branch-name
+    ```
+    To delete remote branch
+    ```
+        git push <remote_name> :<branch_name>
+    ```
+    or
+    ```
+        git push <remote_name> --delete <branch_name>
+    ```
+23. The .gitignore file: 
+
+    To avoid committing those files which one does not want to commit over the git, for example, sensitive information like, passwords, bank account, and so on.
+24. Forking:
+
+    A forking is a process of owning other repository. After you clicked on fork button of a certain repository you will see that that repository became in your repository list. You can try by clicking the fork button on this repository.
+
+
+
+
+
+
+
+
 
 
 
