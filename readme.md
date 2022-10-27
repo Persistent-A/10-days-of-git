@@ -216,10 +216,21 @@
     ```
         git push <remote_name> --delete <branch_name>
     ```
-23. The .gitignore file: 
+23. Delete track file
+    To delete one tracked file
+    ```
+        git rm <filename1>
+    ```
+24. Move file to another file/rename file
+    ```
+        git mv <source> <destination>
+    ```
+
+25. The .gitignore file: 
 
     To avoid committing those files which one does not want to commit over the git, for example, sensitive information like, passwords, bank account, and so on.
-24. Forking:
+    
+26. Forking:
 
     A forking is a process of owning other repository. After you clicked on fork button of a certain repository you will see that that repository became in your repository list. You can try by clicking the fork button on this repository.
 
